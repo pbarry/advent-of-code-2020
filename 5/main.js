@@ -26,7 +26,7 @@ fs.readFile('input', 'utf8' , (err, data) => {
         const seatId = getSeatId(l);
         allSeatIds.add(seatId);
       }
-      allSeatIds.print();
+      // allSeatIds.print();
       let current = allSeatIds.firstNode;
       while (current.next) {
         if (current.next.n > current.n + 1) {

@@ -15,6 +15,11 @@ class LinkedListOfInts {
             this.firstNode = node;
             return;
         }
+        if (this.firstNode.n > node.n) {
+            node.next = this.firstNode;
+            this.firstNode = node;
+            return;
+        }
         let current = this.firstNode;
         while (current.next && current.next.n < node.n) {
             current = current.next;
